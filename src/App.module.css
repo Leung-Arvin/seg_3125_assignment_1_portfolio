@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_wrapper {
+  padding-top: 20px;
+}
+
+.hero {
+  width: 750px;
+  padding-top: 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #000;
+  font-weight: 500;
+}
+
+.hero img {
+  height: 250px;
+  width: 180px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.menu {
+  margin-top: 50px;
+  width: 750px;
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.section {
+  width: 750px;
+}
+.section h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.section p {
+  margin-top: 20px;;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.case_studies {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,auto);
+  gap: 20px;
+}
+
+.date {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+.bullet {
+  margin-bottom: 10px;
+}

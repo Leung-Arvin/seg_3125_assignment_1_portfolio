@@ -1,0 +1,55 @@
+.case_study {
+  display: flex;
+  width: 350px;
+  height: 450px;
+  box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.case_study:hover {
+  transform: rotateY(-10deg) rotateX(10deg);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.spine {
+  width: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  flex: 1;
+  margin: 20px;
+  max-width: 80%;
+  color: white;
+}
+
+.content h2 {
+  font-size: 28px;
+}
+
+.content h3 {
+  font-size: 18px;
+  text-align: right;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 0;
+}
+
+.content img {
+  height: 150px;
+}

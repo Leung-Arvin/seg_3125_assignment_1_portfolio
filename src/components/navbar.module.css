@@ -1,12 +1,60 @@
 .nav_container {
     display: flex;
-    gap: 50px;
+    gap: 88px;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
     padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 50px;
-    border-width: 2px;
+    padding-bottom: 2px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-radius: 20px;
+    border-width: 3px;
     border-color: black;
+    margin-bottom: 0;
+    max-width: fit-content;
 }
+
+.nav_content {
+    position: relative;
+    padding: 5px;
+}
+
+.nav_icon {
+    transition: transform 0.5s ease-in;
+  }
+  
+.nav_content:hover .nav_icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
+}
+
+.nav_content p {
+    padding: 0;
+    margin:0;
+    color: black;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: opacity 0.8s ease;
+    font-size: 12px;
+    z-index: 10;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_content:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
