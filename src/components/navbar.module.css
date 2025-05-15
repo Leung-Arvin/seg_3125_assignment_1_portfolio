@@ -1,23 +1,6 @@
-.nav_container {
-    display: flex;
-    gap: 88px;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    padding-top: 5px;
-    padding-bottom: 2px;
-    padding-left: 150px;
-    padding-right: 150px;
-    border-radius: 20px;
-    border-width: 3px;
-    border-color: black;
-    margin-bottom: 0;
-    max-width: fit-content;
-}
-
 .nav_content {
     position: relative;
-    padding: 5px;
+    padding: 10px;
 }
 
 .nav_icon {
@@ -30,8 +13,6 @@
 }
 
 .nav_content p {
-    padding: 0;
-    margin:0;
     color: black;
 }
 
@@ -57,4 +38,4 @@
 .nav_content:hover .tooltip {
     visibility: visible;
     opacity: 1;
-  }
+}

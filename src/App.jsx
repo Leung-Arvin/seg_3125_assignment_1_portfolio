@@ -1,5 +1,4 @@
 import { useState } from "react";
-import classes from "./App.module.css";
 import { Navbar } from "./components/navbar";
 import { CaseStudy } from "./components/CaseStudy";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
@@ -7,6 +6,8 @@ import 'react-vertical-timeline-component/style.min.css';
 import { WorkflowIcon } from "lucide-react";
 import { FaProjectDiagram, FaReact } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router";
 
 const roles = ["UI/UX Design", "Engineer"];
 
@@ -14,37 +15,42 @@ function App() {
   const [role, setRole] = useState("UI/UX Design");
 
   return (
-    <div className={classes.App}>
+    <div class="flex flex-col gap-5 max-width-4xl justify-center items-center py-5">
       <Navbar />
-      <div className={classes.hero}>
-        <img src="avatar.png"></img>
-        <h1>Hey, I'm Arvin</h1>
-        <div className={classes.titles}>
+      <div class="w-195 pt-10">
+        <img class="h-[250px] w-[180px]" src="avatar.png"></img>
+        <h1 class="text-6xl pb-5">Hey, I'm Arvin</h1>
+        <div class="flex flex-row gap-6 underline text-lg">
           <p>Full Stack Software Engineer</p>
           <p>University of Ottawa Student</p>
         </div>
       </div>
 
-      <div className={classes.menu}>
+      <div class="flex w-195 gap-6 text-lg mt-10 italic">
         {roles.map((r) => (
           <p
             key={r}
             onClick={() => setRole(r)}
-            style={{
-              cursor: "pointer",
-              fontWeight: role === r ? "bold" : "normal",
-              color: role === r ? "black" : "gray",
-            }}
+            class={`cursor-pointer hover:text-black hover:font-bold ${
+              role === r ? "font-bold text-black" : "font-normal text-gray-500"
+            }`}
           >
             {r}
           </p>
         ))}
       </div>
+      <AnimatePresence mode="wait">
       {role === "UI/UX Design" ? (
-        <>
-          <div className={classes.section}>
-            <h2>About Me</h2>
-            <p>
+        <motion.div
+          key="design"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{opacity: 0, y: -10 }}
+          transition={{duration: 0.3}}
+          >
+          <div class="w-195">
+            <h2 class="text-3xl font-medium">About Me</h2>
+            <p class="text-lg mt-2 pb-5">
               As a UI/UX designer, I focus on creating intuitive and visually
               engaging user experiences. My background in design thinking and
               user research allows me to craft interfaces that are not only
@@ -53,24 +59,27 @@ function App() {
               experience possible.
             </p>
           </div>
-          <div className={classes.section}>
-            <h2>Case Studies</h2>
-            <p>
+          <div class="w-195">
+            <h2 class="text-3xl font-medium">Case Studies</h2>
+            <p class="text-lg mt-2 pb-5">
               These case studies showcase my logic, challenges and process
               behind creating each designs. I’ve put a lot of thought into each
               detail and the depth of each study reflects that. If you’re
               curious, take your time and dive in.
             </p>
-            <div className={classes.case_studies}>
-              <CaseStudy
-                read_time="15"
-                title="Designing Simplicity: A Seamless Service"
-                description="A case study on how I learned how to craft a service website that balances usability, clarity, and aesthetic appeal."
-                image="service_website_case.png"
-                spineColor="#2B2659"
-                contentColor="#887BFF"
-                textColor="white"
-              />
+            <div class="grid grid-cols-2 gap-10">
+              <Link to="/case1">
+                <CaseStudy
+                  read_time="15"
+                  title="Designing Simplicity: A Seamless Service"
+                  description="A case study on how I learned how to craft a service website that balances usability, clarity, and aesthetic appeal."
+                  image="service_website_case.png"
+                  spineColor="#2B2659"
+                  contentColor="#887BFF"
+                  textColor="white"
+                />
+              </Link>
+              <Link to="/case2">
               <CaseStudy
                 read_time="15"
                 title="Gameplay Meets Design"
@@ -80,6 +89,8 @@ function App() {
                 contentColor="black"
                 textColor="white"
               />
+              </Link>
+              <Link to="/case3">
               <CaseStudy
                 read_time="15"
                 title="Designing for Conversion"
@@ -89,6 +100,8 @@ function App() {
                 contentColor="#92CAB1"
                 textColor="#143733"
               />
+              </Link>
+              <Link to="/case4">
               <CaseStudy
                 read_time="15"
                 title="Clarity in Data"
@@ -98,24 +111,31 @@ function App() {
                 contentColor="#E3BAC6"
                 textColor="#596475"
               />
+              </Link>
             </div>
           </div>
-        </>
+        </motion.div>
       ) : (
-        <>
-        <div className={classes.section}>
-          <h2>About Me</h2>
-          <p>
+        <motion.div
+          key="engineer"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{opacity: 0, y: -10 }}
+          transition={{duration: 0.3}}
+          >
+        <div class="w-195">
+            <h2 class="text-3xl font-medium">About Me</h2>
+            <p class="text-lg mt-2 pb-5">
             I'm a full-stack software engineer who enjoys building scalable,
             user-centric applications. From clean, efficient APIs to responsive
             front-end interfaces, I love tackling challenges across the tech
             stack. I'm proficient in React, Node.js, TypeScript, and enjoy
             learning new technologies to improve my engineering craft.
-          </p>
-        </div>
-        <div className={classes.section}>
-          <h2>Experience</h2>
-          <p>
+            </p>
+          </div>
+        <div class="w-195">
+          <h2 class="text-3xl font-medium">Experience</h2>
+          <p class="text-lg mt-2 pb-5">
             I have both professional and personal experience in full-stack development. I have enjoyed both working in fast-paced, agile-based, teams and building/architecting my own software projects that benefit either me or others.
           </p>
           <VerticalTimeline>
@@ -124,7 +144,7 @@ function App() {
               contentStyle={{ background: '#8f001a', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  #8f001a' }}
               date="January 2025 - April 2025"
-              dateClassName={classes.date}
+              dateClassName="text-white lg:text-black lg:mx-5"
               iconStyle={{ background: '#8f001a', color: '#fff' }}
               icon={<MdWork/>}
             >
@@ -139,7 +159,7 @@ function App() {
               contentStyle={{ background: 'rgb(145, 75, 241)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  rgb(145, 75, 241)' }}
               date="August 2024"
-              dateClassName={classes.date}
+              dateClassName="text-white lg:text-black lg:mx-5"
               iconStyle={{ background: 'rgb(145, 75, 241)', color: '#fff' }}
               icon={<FaProjectDiagram />}
             >
@@ -154,7 +174,7 @@ function App() {
               contentStyle={{ background: 'rgb(145, 75, 241)', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid  rgb(145, 75, 241)' }}
               date="July 2024"
-              dateClassName={classes.date}
+              dateClassName="text-white lg:text-black lg:mx-5"
               iconStyle={{ background: 'rgb(145, 75, 241)', color: '#fff' }}
               icon={<FaProjectDiagram />}
             >
@@ -166,8 +186,9 @@ function App() {
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
-        </>
+        </motion.div>
       )}
+      </AnimatePresence>
     </div>
   );
 }

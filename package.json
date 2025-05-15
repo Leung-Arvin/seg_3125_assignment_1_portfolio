@@ -2,22 +2,31 @@
   "name": "seg_3125_assignment_1_portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://leung-arvin.github.io/seg_3125_assignment_1_portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.6",
     "bootstrap": "^5.3.6",
+    "framer-motion": "^12.11.4",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.510.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+    "react-router": "^7.6.0",
+    "react-router-dom": "^7.6.0",
     "react-vertical-timeline-component": "^3.5.3",
-    "seg_3125_assignment_1_portfolio": "file:"
+    "seg_3125_assignment_1_portfolio": "file:",
+    "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
