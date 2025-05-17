@@ -7,9 +7,9 @@ export function NotFound() {
       <h1 className="text-6xl font-bold text-red-600">Oops that's not a page</h1>
       <p className="mt-4 text-lg text-gray-700">What are you looking for?
       </p>
-      <a href="/" className="mt-6 text-blue-500 hover:underline">
+      <Link to="/" className="mt-6 text-blue-500 hover:underline">
         Go back to Home
-      </a>
+      </Link>
     </div>
   );
 }

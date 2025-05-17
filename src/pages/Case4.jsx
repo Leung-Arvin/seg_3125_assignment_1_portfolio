@@ -2,9 +2,9 @@ export function Case4() {
   return (
     <div class="flex flex-col w-full h-screen items-center justify-center">
       <h1 class="font-bold text-5xl"> Case 4 Coming Soon...</h1>
-      <a href="/" className="mt-6 text-blue-500 hover:underline">
+      <Link to="/" className="mt-6 text-blue-500 hover:underline">
         Go back to Home
-      </a>
+      </Link>
     </div>
   )
 }
