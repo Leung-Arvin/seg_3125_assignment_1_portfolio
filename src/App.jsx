@@ -31,8 +31,8 @@ function App() {
           <p
             key={r}
             onClick={() => setRole(r)}
-            class={`cursor-pointer hover:text-black hover:font-bold ${
-              role === r ? "font-bold text-black" : "font-normal text-gray-500"
+            class={`cursor-pointer hover:text-black hover:underline hover:underline-offset-8  ${
+              role === r ? "font-bold text-black underline underline-offset-8" : "font-normal text-gray-500"
             }`}
           >
             {r}
