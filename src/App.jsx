@@ -51,12 +51,7 @@ function App() {
           <div class="w-195">
             <h2 class="text-3xl font-medium">About Me</h2>
             <p class="text-lg mt-2 pb-5">
-              As a UI/UX designer, I focus on creating intuitive and visually
-              engaging user experiences. My background in design thinking and
-              user research allows me to craft interfaces that are not only
-              beautiful, but also highly functional. I enjoy wireframing,
-              prototyping, and testing ideas to ensure users have the best
-              experience possible.
+            As a UI/UX designer, I prioritize creating applications that are both visually appealing and intuitive to use. While I’m still early in my design journey, I actively research best practices and trends to leave a lasting impression on users. To strengthen my skills, I’m currently taking a structured UI/UX design course to deepen my understanding of core design principles.
             </p>
           </div>
           <div class="w-195">
@@ -65,7 +60,7 @@ function App() {
               These case studies showcase my logic, challenges and process
               behind creating each designs. I’ve put a lot of thought into each
               detail and the depth of each study reflects that. If you’re
-              curious, take your time and dive in.
+              curious, click on whichever piques your interests.
             </p>
             <div class="grid grid-cols-2 gap-10">
               <Link to="/case1">
