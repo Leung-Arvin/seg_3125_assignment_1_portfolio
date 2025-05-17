@@ -1,4 +1,5 @@
 import { FaSadCry } from "react-icons/fa";
+import { Link } from "react-router";
 
 export function NotFound() {
   return (

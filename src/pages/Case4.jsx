@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export function Case4() {
   return (
     <div class="flex flex-col w-full h-screen items-center justify-center">
