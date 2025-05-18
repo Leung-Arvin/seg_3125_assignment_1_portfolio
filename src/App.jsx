@@ -51,7 +51,11 @@ function App() {
           <div class="w-195">
             <h2 class="text-3xl font-medium">About Me</h2>
             <p class="text-lg mt-2 pb-5">
-            As a UI/UX designer, I prioritize creating applications that are both visually appealing and intuitive to use. While I’m still early in my design journey, I actively research best practices and trends to leave a lasting impression on users. To strengthen my skills, I’m currently taking a structured UI/UX design course to deepen my understanding of core design principles.
+              I'm an amateur in UI/UX design with a background in Software Engineering. To me, nothing leaves a stronger impression than an application's appearance and ease of use. That's why I prioritze design thinking in every project because it's what sets me apart from other full-stack developers. I'm always exploring new design trends and tools whilst discovering new ways to express myself through this artform that is UI/UX design.
+            </p>
+            <h2 class="text-3xl font-medium">How I Work</h2>
+            <p class="text-lg mt-2 pb-5">
+              My UI/UX journey began with personal projects and recently led me to design the University of Ottawa's OutStem landing page. Most of my skills so far are self-taught through Youtube tutorials, experimenting in Figma, and now formalizing my knowledge in my Analysis and Design of User Interfaces course. My Worflow is evolving as a I dive into user research, wireframing, and prototyping. I'll continue to refine my process through hands-on case studies (check them out below!)
             </p>
           </div>
           <div class="w-195">
