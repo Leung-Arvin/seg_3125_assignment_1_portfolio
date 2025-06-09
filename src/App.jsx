@@ -67,11 +67,11 @@ function App() {
               curious, click on whichever piques your interests.
             </p>
             <div class="grid grid-cols-2 gap-10">
-              <Link to="/case1">
+              <Link to="https://tinymicss.netlify.app/">
                 <CaseStudy
                   read_time="15"
                   title="Designing Simplicity: A Seamless Service"
-                  description="A case study on how I learned how to craft a service website that balances usability, clarity, and aesthetic appeal."
+                  description="A case study on how I created TinyMics"
                   image="service_website_case.png"
                   spineColor="#2B2659"
                   contentColor="#887BFF"
