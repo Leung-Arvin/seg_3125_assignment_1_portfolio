@@ -78,12 +78,12 @@ function App() {
                   textColor="white"
                 />
               </Link>
-              <Link to="/case2">
+              <Link to="https://the-fading-tail.netlify.app/">
               <CaseStudy
                 read_time="15"
                 title="Gameplay Meets Design"
-                description="A case study on how I designed a game with a refined HUD for smooth gaming experience."
-                image="game_design_case.png"
+                description="A case study on how I designed a turned-based RPG game with a high-stakes memory mechanic."
+                image="the-fading-tail-case.png"
                 spineColor="#777374"
                 contentColor="black"
                 textColor="white"
