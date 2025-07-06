@@ -89,7 +89,7 @@ function App() {
                 textColor="white"
               />
               </Link>
-              <Link to="/case3">
+              <Link to="https://matcha-mart.netlify.app/">
               <CaseStudy
                 read_time="15"
                 title="Designing for Conversion"
