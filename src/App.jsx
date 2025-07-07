@@ -93,7 +93,7 @@ function App() {
               <CaseStudy
                 read_time="15"
                 title="Designing for Conversion"
-                description="A case study on how I transformed visitors into customers with this e-commerce site."
+                description="A case study on how I made a matcha lovers dream e-commerce website: Matcha Mart."
                 image="ecommerce_website_case.png"
                 spineColor="#69B39A"
                 contentColor="#92CAB1"
