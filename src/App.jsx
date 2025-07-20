@@ -100,11 +100,11 @@ function App() {
                 textColor="#143733"
               />
               </Link>
-              <Link to="/case4">
+              <Link to="https://pokemon-analytics.netlify.app">
               <CaseStudy
                 read_time="15"
                 title="Clarity in Data"
-                description="A case study on my designs for an analytics platform that transforms complex data into clear, actionable insights."
+                description="A case study on my designs for an bilingual analytics platform that transforms Pokemon data to inform strategic team building decisions."
                 image="data_analytics_case.png"
                 spineColor="#BC9EC1"
                 contentColor="#E3BAC6"
